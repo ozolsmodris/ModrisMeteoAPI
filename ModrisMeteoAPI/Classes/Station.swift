@@ -16,8 +16,8 @@ import Foundation
 public struct Station: Decodable {
     public let id: String
     public let name: String
-    public let latitude: Float
-    public let longitude: Float
+    public let latitude: Double
+    public let longitude: Double
     public let temperature: String
     
     enum CodingKeys: String, CodingKey {

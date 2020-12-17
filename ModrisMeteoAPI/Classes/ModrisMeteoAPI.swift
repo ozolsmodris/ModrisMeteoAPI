@@ -9,6 +9,7 @@ import Foundation
 
 public class ModrisMeteoAPI {
     let url = URL(string: "https://www.meteo.lv/meteorologijas-operativie-dati")!
+    public init() {}
     
     /// Return all stations
     /// - Parameter completion: completion returns [Station], Error?
