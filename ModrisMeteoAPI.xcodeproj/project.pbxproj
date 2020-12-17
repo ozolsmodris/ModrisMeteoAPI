@@ -10,6 +10,9 @@
 		8108845C258B5EA7009A6EA1 /* ModrisMeteoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81088452258B5EA7009A6EA1 /* ModrisMeteoAPI.framework */; };
 		81088461258B5EA7009A6EA1 /* ModrisMeteoAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81088460258B5EA7009A6EA1 /* ModrisMeteoAPITests.swift */; };
 		81088463258B5EA7009A6EA1 /* ModrisMeteoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 81088455258B5EA7009A6EA1 /* ModrisMeteoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81088471258B5EBE009A6EA1 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108846E258B5EBD009A6EA1 /* Station.swift */; };
+		81088472258B5EBE009A6EA1 /* ModrisMeteoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108846F258B5EBD009A6EA1 /* ModrisMeteoAPI.swift */; };
+		81088473258B5EBE009A6EA1 /* TemperatureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81088470258B5EBE009A6EA1 /* TemperatureData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		8108845B258B5EA7009A6EA1 /* ModrisMeteoAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModrisMeteoAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81088460258B5EA7009A6EA1 /* ModrisMeteoAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModrisMeteoAPITests.swift; sourceTree = "<group>"; };
 		81088462258B5EA7009A6EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8108846E258B5EBD009A6EA1 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		8108846F258B5EBD009A6EA1 /* ModrisMeteoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModrisMeteoAPI.swift; sourceTree = "<group>"; };
+		81088470258B5EBE009A6EA1 /* TemperatureData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		81088454258B5EA7009A6EA1 /* ModrisMeteoAPI */ = {
 			isa = PBXGroup;
 			children = (
+				8108846F258B5EBD009A6EA1 /* ModrisMeteoAPI.swift */,
+				8108846E258B5EBD009A6EA1 /* Station.swift */,
+				81088470258B5EBE009A6EA1 /* TemperatureData.swift */,
 				81088455258B5EA7009A6EA1 /* ModrisMeteoAPI.h */,
 				81088456258B5EA7009A6EA1 /* Info.plist */,
 			);
@@ -147,6 +156,7 @@
 				TargetAttributes = {
 					81088451258B5EA7009A6EA1 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					8108845A258B5EA7009A6EA1 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81088473258B5EBE009A6EA1 /* TemperatureData.swift in Sources */,
+				81088471258B5EBE009A6EA1 /* Station.swift in Sources */,
+				81088472258B5EBE009A6EA1 /* ModrisMeteoAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 		81088467258B5EA7009A6EA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D9TBJ5WHDG;
@@ -357,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.modris.ozols.ModrisMeteoAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +380,7 @@
 		81088468258B5EA7009A6EA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D9TBJ5WHDG;
@@ -389,6 +405,7 @@
 		8108846A258B5EA7009A6EA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9TBJ5WHDG;
 				INFOPLIST_FILE = ModrisMeteoAPITests/Info.plist;
@@ -407,6 +424,7 @@
 		8108846B258B5EA7009A6EA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D9TBJ5WHDG;
 				INFOPLIST_FILE = ModrisMeteoAPITests/Info.plist;
