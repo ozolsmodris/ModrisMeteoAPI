@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'ModrisMeteoAPI'
-    s.version          = '0.1.1'
+    s.version          = '0.1.2'
     s.summary          = 'ModrisMeteoAPI is API framework'
     s.description      = <<-DESC
     API framework to retrieve metrology station data

@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ModrisMeteoAPI {
+public class ModrisMeteoAPI {
     let url = URL(string: "https://www.meteo.lv/meteorologijas-operativie-dati")!
     
     /// Return all stations
