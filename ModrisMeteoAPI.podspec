@@ -5,5 +5,5 @@ Pod::Spec.new do |spec|
     spec.homepage     = "http://EXAMPLE/ModrisMeteoAPI"
     spec.author       = { "Modris Ozols" => "modris.ozols@testdevlab.com" }
     spec.summary      = "ModrisMeteoAPI is API framework to get Temperature based of your locatin"
-    spec.source       = { :git => "http://EXAMPLE/ModrisMeteoAPI.git", :tag => "#{spec.version}" }
+    spec.source       = { :git => "https://github.com/ozolsmodris/ModrisMeteoAPI.git", :tag => "#{spec.version}" }
 end
