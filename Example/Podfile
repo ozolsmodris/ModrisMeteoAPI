@@ -1,7 +1,0 @@
-use_frameworks!
-target 'ModrisMeteoAPI_Tests' do
-  pod 'ModrisMeteoAPI', :path => '../'
-  
-  pod 'Quick', '~> 2.2.0'
-    pod 'Nimble', '~> 8.0.7'
-end
